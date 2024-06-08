@@ -1,0 +1,80 @@
+body {
+    background-color: #000;
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main {
+    width: 1178px;
+    height: 588px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.div {
+    height: 600px;
+    width: 293px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.div h2,
+.div p {
+    position: absolute;
+    z-index: 1;
+    color: aliceblue;
+    padding: 10px;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.div h2 {
+    bottom: 40px;
+    left: 10px;
+    font-weight: 700;
+}
+
+.div p {
+    bottom: 20px; 
+    left: 10px;
+    font-weight: 400;
+    margin: 0;
+}
+ img {
+    position: absolute;
+
+    transition: filter 0.4s, transform 0.4s;
+}
+
+.btn-know-more {
+    position: absolute;
+    bottom: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: rgb(13, 230, 245);
+    transition: opacity 0.3s;
+    opacity: 0;
+}
+
+@media (max-width: 768px) {
+    .main {
+        width: 400px;
+        margin: -10px;
+        flex-direction: row;
+        display: flex;
+    }
+
+    .div {
+        width: 98.5px;
+        height: 600px;
+        margin-top: -15px;
+    }
+
+    .div h2,
+    .div p,
+    .btn-know-more {
+        display: none;
+    }
+}
